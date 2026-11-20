@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:gravity="center"
-        android:text="Enable Feedlock"
+        android:text="@string/title_enable"
         android:textSize="30sp" />
 
     <TextView
@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
-        android:text="1. Open accessibility settings \n2. Tap Installed Apps \n3. Tap FeedLock \n4. Tap the switch to turn it on \n5. Click allow when prompted"
+        android:text="@string/instructions"
         android:textAlignment="textStart"
         android:textSize="18sp" />
 
@@ -28,38 +28,6 @@
         android:id="@+id/enableButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Open accessibility settings"/>
-
-    <LinearLayout
-        android:id="@+id/usernameSection"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="32dp"
-        android:visibility="gone">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Your Instagram username"
-            android:layout_marginBottom="8dp"
-            android:textSize="16sp" />
-
-        <EditText
-            android:id="@+id/usernameInput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@handle"
-            android:inputType="text"
-            android:autofillHints="username"
-            android:layout_marginBottom="12dp" />
-
-        <Button
-            android:id="@+id/saveButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Save" />
-
-    </LinearLayout>
+        android:text="@string/button_open_settings"/>
 
 </LinearLayout>

@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">FeedLock</string>
-    <string name="accessibility_service_description">FeedLock monitors foreground apps to block Instagram feed access.</string>
+    <string name="accessibility_service_description">O FeedLock detecta quando os Reels do Instagram estão abertos e volta para a tela inicial do celular. Feed, Stories, Direct, perfil, Explorar e Reels enviados nas conversas continuam liberados.</string>
+
+    <string name="title_enable">Ativar o FeedLock</string>
+    <string name="status_active">FeedLock está ativo</string>
+    <string name="status_permission_required">Permissão de acessibilidade necessária</string>
+    <string name="instructions">1. Abra as configurações de acessibilidade\n2. Toque em Apps instalados (ou Serviços baixados)\n3. Toque em FeedLock\n4. Ative a chave\n5. Toque em Permitir quando solicitado</string>
+    <string name="instructions_active">Os Reels estão bloqueados. Feed, Stories, Direct, perfil e Reels abertos pelas conversas continuam funcionando normalmente.</string>
+    <string name="button_open_settings">Abrir configurações de acessibilidade</string>
 </resources>
