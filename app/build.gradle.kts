@@ -23,8 +23,8 @@ android {
         applicationId = "com.jhopn.reelsfeedlock"
         minSdk = 26
         targetSdk = 36
-        versionCode = 1
-        versionName = "1.0.0"
+        versionCode = 2
+        versionName = "1.0.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -51,6 +51,11 @@ android {
             )
         }
     }
+    // Só inclui no app os idiomas que ele suporta (corta traduções das bibliotecas)
+    androidResources {
+        localeFilters += listOf("en", "pt", "es")
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
