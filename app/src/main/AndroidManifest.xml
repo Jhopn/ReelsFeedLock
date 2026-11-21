@@ -23,6 +23,7 @@
 
         <service
             android:name=".FeedLockService"
+            android:label="@string/service_label"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
             android:exported="true">
             <intent-filter>

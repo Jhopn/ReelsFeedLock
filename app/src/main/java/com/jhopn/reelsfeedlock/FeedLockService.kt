@@ -1,4 +1,4 @@
-package com.caasi.feedlock
+package com.jhopn.reelsfeedlock
 
 import android.accessibilityservice.AccessibilityService
 import android.util.Log
@@ -65,6 +65,8 @@ class FeedLockService : AccessibilityService() {
 
     override fun onAccessibilityEvent(event: AccessibilityEvent?) {
         if (event?.packageName?.toString() != IG) return
+        // Bloqueio desligado pelo usuário no app
+        if (!Prefs.isBlockReels(this)) return
         if (event.eventType != AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED &&
             event.eventType != AccessibilityEvent.TYPE_WINDOW_CONTENT_CHANGED
         ) return
@@ -98,7 +100,8 @@ class FeedLockService : AccessibilityService() {
 
             if (anyVisible(root, TAB_BAR_IDS)) cameFromDirect = false
 
-            if (anyVisible(root, REELS_VIEW_IDS) && !cameFromDirect) block()
+            val allowed = cameFromDirect && Prefs.isAllowFromDirect(this)
+            if (anyVisible(root, REELS_VIEW_IDS) && !allowed) block()
         } finally {
             root.recycle()
         }

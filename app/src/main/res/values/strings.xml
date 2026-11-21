@@ -1,11 +1,22 @@
 <resources>
-    <string name="app_name">FeedLock</string>
-    <string name="accessibility_service_description">O FeedLock detecta quando os Reels do Instagram estão abertos e volta para a tela inicial do celular. Feed, Stories, Direct, perfil, Explorar e Reels enviados nas conversas continuam liberados.</string>
+    <string name="app_name">ReelsFeedLock</string>
+    <string name="accessibility_service_description">O ReelsFeedLock detecta quando os Reels do Instagram estão abertos e volta para a tela inicial do celular. Feed, Stories, Direct, perfil, Explorar e Reels enviados nas conversas continuam liberados.</string>
 
-    <string name="title_enable">Ativar o FeedLock</string>
-    <string name="status_active">FeedLock está ativo</string>
+    <string name="title_enable">Ativar o ReelsFeedLock</string>
+    <string name="status_active">ReelsFeedLock está ativo</string>
     <string name="status_permission_required">Permissão de acessibilidade necessária</string>
-    <string name="instructions">1. Abra as configurações de acessibilidade\n2. Toque em Apps instalados (ou Serviços baixados)\n3. Toque em FeedLock\n4. Ative a chave\n5. Toque em Permitir quando solicitado</string>
+    <string name="instructions">1. Abra as configurações de acessibilidade\n2. Toque em Apps instalados (ou Serviços baixados)\n3. Toque em ReelsFeedLock\n4. Ative a chave\n5. Toque em Permitir quando solicitado</string>
     <string name="instructions_active">Os Reels estão bloqueados. Feed, Stories, Direct, perfil e Reels abertos pelas conversas continuam funcionando normalmente.</string>
     <string name="button_open_settings">Abrir configurações de acessibilidade</string>
+
+    <!-- Aviso exigido pela Play Store antes de pedir a permissão de acessibilidade -->
+    <string name="disclosure_title">Como o ReelsFeedLock usa a acessibilidade</string>
+    <string name="disclosure_message">O ReelsFeedLock usa o serviço de acessibilidade do Android para saber se a tela de Reels do Instagram está aberta.\n\n• Ele só observa o app do Instagram. Nenhum outro app é monitorado.\n• Dentro do Instagram, ele verifica apenas os identificadores das telas (por exemplo, se a aba Reels está selecionada). Ele não lê nem guarda mensagens, senhas ou outros textos.\n• Quando encontra os Reels, a única ação é ir para a tela inicial do celular.\n• Nenhum dado é coletado, armazenado ou enviado. O app não tem acesso à internet.\n\nO Android vai mostrar um aviso genérico de que apps de acessibilidade podem ver a tela. Você pode desativar o serviço a qualquer momento nas configurações de acessibilidade.</string>
+    <string name="disclosure_accept">Concordo</string>
+    <string name="disclosure_decline">Agora não</string>
+    <string name="service_label">Bloqueio de Reels</string>
+
+    <string name="option_block_reels">Bloquear Reels</string>
+    <string name="option_allow_direct">Permitir Reels enviados nas conversas</string>
+    <string name="instructions_paused">Os Reels estão liberados. Ative a opção abaixo para voltar a bloquear.</string>
 </resources>

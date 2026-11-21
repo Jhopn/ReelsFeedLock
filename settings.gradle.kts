@@ -22,5 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "FeedLock"
+rootProject.name = "ReelsFeedLock"
 include(":app")
