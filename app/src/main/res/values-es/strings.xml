@@ -1,0 +1,21 @@
+<resources>
+    <string name="accessibility_service_description">ReelsFeedLock detecta cuando los Reels de Instagram están abiertos y vuelve a la pantalla de inicio del teléfono. El feed, las Stories, Direct, el perfil, Explorar y los Reels enviados en los chats siguen disponibles.</string>
+
+    <string name="title_enable">Activar ReelsFeedLock</string>
+    <string name="status_active">ReelsFeedLock está activo</string>
+    <string name="status_permission_required">Se necesita el permiso de accesibilidad</string>
+    <string name="instructions">1. Abre los ajustes de accesibilidad\n2. Toca Aplicaciones instaladas (o Servicios descargados)\n3. Toca ReelsFeedLock\n4. Activa el interruptor\n5. Toca Permitir cuando se te pida</string>
+    <string name="instructions_active">Los Reels están bloqueados. El feed, las Stories, Direct, el perfil y los Reels abiertos desde los chats siguen funcionando con normalidad.</string>
+    <string name="button_open_settings">Abrir ajustes de accesibilidad</string>
+
+    <!-- Aviso exigido pela Play Store antes de pedir a permissão de acessibilidade -->
+    <string name="disclosure_title">Cómo usa ReelsFeedLock la accesibilidad</string>
+    <string name="disclosure_message">ReelsFeedLock usa el servicio de accesibilidad de Android para saber si la pantalla de Reels de Instagram está abierta.\n\n• Solo observa la app de Instagram. Ninguna otra app se supervisa.\n• Dentro de Instagram, solo comprueba los identificadores de las pantallas (por ejemplo, si la pestaña Reels está seleccionada). No lee ni guarda mensajes, contraseñas ni otros textos.\n• Cuando encuentra los Reels, su única acción es ir a la pantalla de inicio del teléfono.\n• No se recopila, guarda ni envía ningún dato. La app no tiene acceso a internet.\n\nAndroid mostrará un aviso genérico de que las apps de accesibilidad pueden ver la pantalla. Puedes desactivar el servicio en cualquier momento en los ajustes de accesibilidad.</string>
+    <string name="disclosure_accept">Acepto</string>
+    <string name="disclosure_decline">Ahora no</string>
+    <string name="service_label">Bloqueo de Reels</string>
+
+    <string name="option_block_reels">Bloquear Reels</string>
+    <string name="option_allow_direct">Permitir Reels enviados en los chats</string>
+    <string name="instructions_paused">Los Reels están permitidos. Activa la opción de abajo para volver a bloquearlos.</string>
+</resources>

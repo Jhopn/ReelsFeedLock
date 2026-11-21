@@ -1,11 +1,23 @@
 <resources>
-    <string name="app_name">FeedLock</string>
-    <string name="accessibility_service_description">O FeedLock detecta quando os Reels do Instagram estão abertos e volta para a tela inicial do celular. Feed, Stories, Direct, perfil, Explorar e Reels enviados nas conversas continuam liberados.</string>
+    <!-- Idioma padrão: inglês (usado quando o celular não está em português nem espanhol) -->
+    <string name="app_name" translatable="false">ReelsFeedLock</string>
+    <string name="accessibility_service_description">ReelsFeedLock detects when Instagram Reels are open and goes back to your phone\'s home screen. Feed, Stories, Direct, profile, Explore and Reels sent in chats stay available.</string>
 
-    <string name="title_enable">Ativar o FeedLock</string>
-    <string name="status_active">FeedLock está ativo</string>
-    <string name="status_permission_required">Permissão de acessibilidade necessária</string>
-    <string name="instructions">1. Abra as configurações de acessibilidade\n2. Toque em Apps instalados (ou Serviços baixados)\n3. Toque em FeedLock\n4. Ative a chave\n5. Toque em Permitir quando solicitado</string>
-    <string name="instructions_active">Os Reels estão bloqueados. Feed, Stories, Direct, perfil e Reels abertos pelas conversas continuam funcionando normalmente.</string>
-    <string name="button_open_settings">Abrir configurações de acessibilidade</string>
+    <string name="title_enable">Enable ReelsFeedLock</string>
+    <string name="status_active">ReelsFeedLock is active</string>
+    <string name="status_permission_required">Accessibility permission required</string>
+    <string name="instructions">1. Open accessibility settings\n2. Tap Installed apps (or Downloaded apps)\n3. Tap ReelsFeedLock\n4. Turn the switch on\n5. Tap Allow when prompted</string>
+    <string name="instructions_active">Reels are blocked. Feed, Stories, Direct, profile and Reels opened from chats keep working normally.</string>
+    <string name="button_open_settings">Open accessibility settings</string>
+
+    <!-- Aviso exigido pela Play Store antes de pedir a permissão de acessibilidade -->
+    <string name="disclosure_title">How ReelsFeedLock uses accessibility</string>
+    <string name="disclosure_message">ReelsFeedLock uses Android\'s accessibility service to know whether Instagram\'s Reels screen is open.\n\n• It only watches the Instagram app. No other app is monitored.\n• Inside Instagram, it only checks screen identifiers (for example, whether the Reels tab is selected). It does not read or store messages, passwords or any other text.\n• When it finds Reels, its only action is to go to your phone\'s home screen.\n• No data is collected, stored or sent. The app has no internet access.\n\nAndroid will show a generic warning that accessibility apps can see your screen. You can turn the service off at any time in accessibility settings.</string>
+    <string name="disclosure_accept">I agree</string>
+    <string name="disclosure_decline">Not now</string>
+    <string name="service_label">Reels blocker</string>
+
+    <string name="option_block_reels">Block Reels</string>
+    <string name="option_allow_direct">Allow Reels sent in chats</string>
+    <string name="instructions_paused">Reels are allowed. Turn on the option below to block them again.</string>
 </resources>

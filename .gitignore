@@ -13,3 +13,9 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Chave de assinatura (nunca enviar para o git)
+/signing/
+*.jks
+*.keystore
+keystore.properties

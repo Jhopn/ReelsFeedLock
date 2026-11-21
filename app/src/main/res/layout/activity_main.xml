@@ -1,33 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="32dp">
+    android:fillViewport="true">
 
-    <TextView
-        android:id="@+id/statusText"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:orientation="vertical"
         android:gravity="center"
-        android:text="@string/title_enable"
-        android:textSize="30sp" />
+        android:padding="32dp">
 
-    <TextView
-        android:id="@+id/instructions"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:text="@string/instructions"
-        android:textAlignment="textStart"
-        android:textSize="18sp" />
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@null"
+            android:src="@mipmap/ic_launcher" />
 
-    <Button
-        android:id="@+id/enableButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_open_settings"/>
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="@string/title_enable"
+            android:textSize="28sp" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/instructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="@string/instructions"
+            android:textAlignment="textStart"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/enableButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_open_settings" />
+
+        <LinearLayout
+            android:id="@+id/optionsSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/blockReelsSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="56dp"
+                android:text="@string/option_block_reels"
+                android:textSize="18sp" />
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/allowDirectSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="56dp"
+                android:text="@string/option_allow_direct"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
